@@ -1,0 +1,254 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.call-notification {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.call-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.video-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.participant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .video-container {
+    max-width: 400px;
+    height: 250px;
+  }
+}
+
+.meet-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #202124;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.video-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  .local-thumbnail {
+    width: 120px;
+    height: 80px;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .controls {
+    right: 10px;
+    bottom: 100px;
+    gap: 5px;
+  }
+  
+  .control-btn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.video-item {
+  position: relative;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-element video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.main-video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.local-thumbnail {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.local-thumbnail .video-element {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.control-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.end-call {
+  background-color: #ea4335 !important;
+  color: white !important;
+}
+
+.end-call:hover {
+  background-color: #d33b2c !important;
+}
+
+

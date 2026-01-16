@@ -1,0 +1,13 @@
+{
+  "appId": "com.example.reacttwiliovideo",
+  "appName": "React Twilio Video",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "automatic"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "edgeToEdge": true
+  }
+}
