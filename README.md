@@ -1,6 +1,6 @@
-# Twilio Video React Sample
+# Twilio Video React Sample for reproducing bug during VoIP Calls
 
-This repository is a **full-stack sample application** demonstrating the integration of **Twilio Video** with a modern web stack.
+This repository is a **full-stack sample application** for demonstrating the **bug** of **VoIP call**, in the current **Twilio Video** with a modern web stack.
 
 - **Frontend**: React + Vite
 - **Backend**: NestJS (TypeScript)
